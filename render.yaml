@@ -4,7 +4,7 @@ services:
     name: express-backend
     env: node
     plan: free
-    buildCommand: "cd server && npm install && npm run build"
+    buildCommand: "cd backend && npm install"
     startCommand: "cd server && npm start"
     envVars:
       - key: NODE_ENV
@@ -21,7 +21,7 @@ services:
     name: react-frontend
     env: node
     plan: free
-    buildCommand: "cd client && npm install && npm run build"
+    buildCommand: "cd smart-ai-note-taker && npm install && npm run build"
     startCommand: "cd client && npx serve -s build"
     envVars:
       - key: NODE_ENV
