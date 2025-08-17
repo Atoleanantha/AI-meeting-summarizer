@@ -2,7 +2,7 @@ import axios from 'axios';
 import { toast } from "@/hooks/use-toast";
 
 // Base API configuration
-const API_BASE_URL = 'http://localhost:3000/api'; // Update this to your backend URL
+const API_BASE_URL =process.env.REACT_APP_API_URL || 'http://localhost:3000/api'; // Update this to your backend URL
 
 const api = axios.create({
   baseURL: API_BASE_URL,

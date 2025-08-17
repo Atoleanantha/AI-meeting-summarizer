@@ -1,0 +1,28 @@
+services:
+  # Backend (Express)
+  - type: web
+    name: express-backend
+    env: node
+    plan: free
+    buildCommand: "cd server && npm install && npm run build"
+    startCommand: "cd server && npm start"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        sync: false # set in dashboard/Render secrets
+      - key: JWT_SECRET
+        sync: false
+
+  # Frontend (React)
+  - type: web
+    name: react-frontend
+    env: node
+    plan: free
+    buildCommand: "cd client && npm install && npm run build"
+    startCommand: "cd client && npx serve -s build"
+    envVars:
+      - key: NODE_ENV
+        value: production
