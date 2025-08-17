@@ -6,6 +6,10 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
+    allowedHosts: [
+      'ai-meeting-summarizer-ui.onrender.com', // your Render domain
+      'localhost' // keep for local dev
+    ],
     host: "::",
     port: 8080,
   },
