@@ -25,24 +25,54 @@ Upload transcripts, text, or files, and let AI generate **concise summaries** wi
 
 ## 📂 Project Structure  
 
-├── backend/ # Express + MongoDB + AI backend
-│ ├── controller/ # Controllers (user, notes)
-│ ├── middleware/ # Auth & upload middleware
-│ ├── model/ # Mongoose models
-│ ├── routes/ # Express routes
-│ ├── services/ # AI & email services
-│ ├── uploads/ # Uploaded files
-│ └── server.js # Backend entry
-│
-├── smart-ai-note-taker/ # React + Vite + TS frontend
-│ ├── src/
-│ │ ├── components/ # Reusable UI & feature components
-│ │ ├── contexts/ # Auth context
-│ │ ├── hooks/ # Custom hooks
-│ │ ├── lib/ # API utilities
-│ │ ├── pages/ # Pages (Dashboard, Notes, Profile, etc.)
-│ │ └── App.tsx # Root App
-│ └── vite.config.ts # Vite configuration
-│
-├── render.yaml # Render deployment config
-└── README.md # Documentation
+-├── backend/ # Express + MongoDB + AI backend
+-│ ├── controller/ # Controllers (user, notes)
+-│ ├── middleware/ # Auth & upload middleware
+-│ ├── model/ # Mongoose models
+-│ ├── routes/ # Express routes
+-│ ├── services/ # AI & email services
+-│ ├── uploads/ # Uploaded files
+-│ └── server.js # Backend entry
+-│
+-├── smart-ai-note-taker/ # React + Vite + TS frontend
+-│ ├── src/
+-│ │ ├── components/ # Reusable UI & feature components
+-│ │ ├── contexts/ # Auth context
+-│ │ ├── hooks/ # Custom hooks
+-│ │ ├── lib/ # API utilities
+-│ │ ├── pages/ # Pages (Dashboard, Notes, Profile, etc.)
+-│ │ └── App.tsx # Root App
+-│ └── vite.config.ts # Vite configuration
+-│
+-├── render.yaml # Render deployment config
+-└── README.md # Documentation
+
+
+---
+
+## 🛠 Tech Stack  
+
+**Frontend**  
+- ⚡ React + Vite + TypeScript  
+- 🎨 Tailwind CSS + ShadCN UI  
+- 🔄 Context API  
+
+**Backend**  
+- 🟢 Node.js + Express  
+- 🗄 MongoDB (Mongoose)  
+- 🔑 JWT Authentication  
+- 🤖 AI Service Integration  
+- 📧 Nodemailer  
+
+**Deployment**  
+- 🚀 Render (backend + frontend hosting)  
+
+---
+
+## ⚙️ Setup & Installation  
+
+### 🔹 Clone Repo  
+```bash
+git clone https://github.com/your-username/smart-ai-note-taker.git
+cd smart-ai-note-taker
+
